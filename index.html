@@ -6,29 +6,316 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="paper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <title>Document</title>
+    <style>
+        body {
+            background-image: url('https://www.getpapercss.com/img/geometry2.png');
+        }
+    </style>
 </head>
 
 <body>
-    <div class="paper container">
-        <h1>Some Fresh Title</h1>
-        <p>This is where some content would go.</p>
-        <div class="row flex-spaces">
-            <div class="col-12 col">
-                <div class="card border">
-                    <div class="card-body">
-                        <h4 class="card-title">My awesome Paper card!</h4>
-                        <h5 class="card-subtitle">Nice looking subtitle.</h5>
-                        <p class="card-text">This is another example of a card without image. Cards are also meant to be
-                            used without images, but with text/links/buttons.</p>
-                        <a class="card-link" href="#">First link</a>
-                        <a class="card-link" href="#">Second link</a>
+    <nav class="border fixed split-nav">
+        <div class="nav-brand">
+            <h3><a href="#">Get PaperCSS</a></h3>
+        </div>
+        <div class="collapsible">
+            <input id="collapsible1" type="checkbox" name="collapsible1">
+            <label for="collapsible1">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </label>
+            <div class="collapsible-body">
+                <ul class="inline">
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Github</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="paper container margin-top-large">
+        <div class="row flex-middle">
+            <div class="col-3 col">
+                <img src="https://humanoo.id/f/images/yama/yama.jpeg" class="float-right" width="150px" alt="Yama">
+            </div>
+            <div class="col-fill col">
+                <h2 class="margin-none">Yayan Maulana (Yama)</h2>
+                <p>I'm a Full Stack Developer</p>
+                <div class="row flex-middle">
+                    <div class="col-fill col padding-none">
+                        <a href="https://www.instagram.com/abuyama24/" class="margin-right-small" target="_blank"
+                            popover-top="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/abuyama24" class="margin-right-small" target="_blank"
+                            popover-top="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/abuyama/" class="margin-right-small" target="_blank"
+                            popover-top="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/yama24" class="margin-right-small" target="_blank"
+                            popover-top="Github"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://t.me/yama24" class="margin-right-small" target="_blank"
+                            popover-top="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://wa.me/628986182128" class="margin-right-small" target="_blank"
+                            popover-top="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-
+        <div class="row">
+            <div class="col-12 col border border-primary">
+                <h4 class="card-title">About Me</h4>
+                <div class="row">
+                    <div class="col-3 col">
+                        <img src="https://humanoo.id/f/images/yama/yama2.jpg" class="float-right" width="150px"
+                            alt="Yama">
+                    </div>
+                    <div class="col-fill col">
+                        <p>I am Yayan Maulana, Web Developer from Bogor, Indonesia. I have a lot of experience in
+                            building web-based application systems like ERP, CRM. E-Commerce, etc. I am also a fast
+                            learner. Everything can be learned except for something I don't want to learn. Give me
+                            space, time and internet access so I can be anything.</p>
+                        <div class="row">
+                            <div class="col-fill col padding-none">
+                                <a href="https://www.canva.com/design/DAE76bwHBGA/Jr-QDyh3pY6qipOMCIK-DQ/view?utm_content=DAE76bwHBGA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                    class="paper-btn btn-secondary-outline" target="_blank">Download CV</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-fill col">
+                        <div class="progress margin-bottom margin-top">
+                            <div class="bar warning w-90">Programming 90%</div>
+                        </div>
+                        <div class="progress margin-bottom">
+                            <div class="bar danger w-50">UI/UX design 50%</div>
+                        </div>
+                        <div class="progress margin-bottom">
+                            <div class="bar secondary w-80">Database 80%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col border border-2 border-primary margin-top">
+                <h4 class="card-title">Experiences</h4>
+                <div class="row">
+                    <div class="col-fill col">
+                        <div class="collapsible">
+                            <input id="collapsible2" type="radio" name="collapsible">
+                            <label for="collapsible2">May 2021 - Present</label>
+                            <div class="collapsible-body">
+                                <h5><b>Full Stack Developer</b></h5>
+                                <h5>PT VAN AROMA</h5>
+                                <ul>
+                                    <li>Planning, designing, building, testing and releasing new features by request
+                                        (ERP systems)</li>
+                                    <li>Planning, designing, building, testing and releasing new applications needed
+                                        (Vendor Portal, Customer Portal, etc)</li>
+                                    <li>ERP system migration from native to Codeigniter 4</li>
+                                    <li>Create on-demand report pages such as sales reports, purchase reports etc</li>
+                                    <li>Improve existing features to improve application performance</li>
+                                    <li>Develop front-end functionality using HTML, CSS, Javascript, jQuery and
+                                        Bootstrap</li>
+                                    <li>Develop relasional database Query using MySql</li>
+                                    <li>integrates third party APIs like chat-api for WhatsApp notifications</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="collapsible">
+                            <input id="collapsible3" type="radio" name="collapsible">
+                            <label for="collapsible3">Mar 2019 - May 2021</label>
+                            <div class="collapsible-body">
+                                <h5><b>Full Stack Developer & Product Manager</b></h5>
+                                <h5>CREATIVE PRODUCTION</h5>
+                                <ul>
+                                    <li>Design products</li>
+                                    <li>Build landing page for marketing and advertising needs</li>
+                                    <li>Build and maintenance e-commerce (blindo.id)</li>
+                                    <li>Manage ads</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="collapsible">
+                            <input id="collapsible4" type="radio" name="collapsible">
+                            <label for="collapsible4">Jan 2018 - Mar 2019</label>
+                            <div class="collapsible-body">
+                                <h5><b>Full Stack Developer</b></h5>
+                                <h5>INTERNUSA</h5>
+                                <ul>
+                                    <li>Build and manage Web Profile</li>
+                                    <li>Build and manage Attendace and Payroll App</li>
+                                    <li>Build and manage fundraising app</li>
+                                    <li>Build and manage Warehouse App</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col border border-3 border-primary margin-top">
+                <h4 class="card-title">Recent works</h4>
+                <div class="row">
+                    <div class="col-fill col">
+                        <div class="row">
+                            <div class="col-6 col">
+                                <div class="card">
+                                    <img src="https://humanoo.id/f/images/yama/gtw.png" alt="Goestowedding">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Goestowedding.com</h4>
+                                        <p class="card-text">This is a project with friends and is a digital wedding
+                                            invitation. One of the pre-wedding hassles is making, printing, and
+                                            distributing paper invitations.</p>
+                                        <p class="card-text">With Goestowedding you don't need to feel that, because
+                                            everything only needs to be done in front of your screen.</p>
+                                        <a class="paper-btn btn-secondary-outline" href="https://goestowedding.com/"
+                                            target="_blank">Goestowedding.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col">
+                                <div class="card">
+                                    <img src="https://humanoo.id/f/images/yama/wa.png" alt="WhatsApp Web API">
+                                    <div class="card-body">
+                                        <h4 class="card-title">WhatsApp Web API</h4>
+                                        <p class="card-text">This is an API to send notifications to the user.</p>
+                                        <p class="card-text">This API is already implemented on <a
+                                                href="https://goestowedding.com/" target="_blank">Goestowedding.com</a>
+                                        </p>
+                                        <a class="paper-btn btn-secondary-outline"
+                                            href="https://yama24.github.io/mywaapi/" target="_blank">mywaapi</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col">
+                                <div class="card">
+                                    <img src="https://humanoo.id/f/images/yama/alqi.png" alt="Alifaqiqahcatering.com">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Alifaqiqahcatering.com</h4>
+                                        <p class="card-text">A website to market aqiqah services.</p>
+                                        <p class="card-text">
+                                        <div class="alert alert-danger">*Under Development</div>
+                                        </p>
+                                        <a class="paper-btn btn-secondary-outline"
+                                            href="https://alifaqiqahcatering.com/"
+                                            target="_blank">Alifaqiqahcatering.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col">
+                                <div class="card">
+                                    <img src="https://humanoo.id/f/images/yama/purnamalab.png" alt="Purnamalab.com">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Purnamalab.com</h4>
+                                        <p class="card-text">This is a product catalog website from a company that
+                                            provides chemical test kits.</p>
+                                        <p class="card-text">I rebuilt this website using static framework</p>
+                                        <a class="paper-btn btn-secondary-outline" href="https://purnamalab.com/"
+                                            target="_blank">Purnamalab.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col">
+                                <div class="card">
+                                    <img src="https://humanoo.id/f/images/yama/humanoo.png" alt="Humanoo.id">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Humanoo.id</h4>
+                                        <p class="card-text">This is a blog to write whatever we know about programming,
+                                            we hope this blog is useful for everyone who wants to learn programming.</p>
+                                        <p class="card-text">In the future maybe we will develop this into a free
+                                            learning platform.</p>
+                                        <p class="card-text">
+                                        <div class="alert alert-danger">*Under Development</div>
+                                        </p>
+                                        <a class="paper-btn btn-secondary-outline" href="https://humanoo.id/"
+                                            target="_blank">Humanoo.id</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col border border-4 border-primary margin-top">
+                <h4 class="card-title">The Tech</h4>
+                <div class="row flex-center">
+                    <div class="col-2 col" popover-top="HTML">
+                        <img src="https://humanoo.id/f/images/yama/html.svg" class="no-border" alt="HTML">
+                    </div>
+                    <div class="col-2 col" popover-top="CSS">
+                        <img src="https://humanoo.id/f/images/yama/css3.svg" class="no-border" alt="CSS">
+                    </div>
+                    <div class="col-2 col" popover-top="Javascript">
+                        <img src="https://humanoo.id/f/images/yama/javascript.svg" class="no-border" alt="Javascript">
+                    </div>
+                    <div class="col-2 col" popover-top="jQuery">
+                        <img src="https://humanoo.id/f/images/yama/jquery.svg" class="no-border" alt="jQuery">
+                    </div>
+                    <div class="col-2 col" popover-top="Vue.js">
+                        <img src="https://humanoo.id/f/images/yama/vuejs.svg" class="no-border" alt="Vue.js">
+                    </div>
+                    <div class="col-2 col" popover-top="Bootstrap">
+                        <img src="https://humanoo.id/f/images/yama/bootstrap.svg" class="no-border" alt="Bootstrap">
+                    </div>
+                    <div class="col-2 col" popover-top="PHP">
+                        <img src="https://humanoo.id/f/images/yama/php.svg" class="no-border" alt="PHP">
+                    </div>
+                    <div class="col-2 col" popover-top="Composer">
+                        <img src="https://humanoo.id/f/images/yama/composer.svg" class="no-border" alt="Composer">
+                    </div>
+                    <div class="col-2 col" popover-top="Codeigniter">
+                        <img src="https://humanoo.id/f/images/yama/codeigniter.svg" class="no-border" alt="Codeigniter">
+                    </div>
+                    <div class="col-2 col" popover-top="Laravel">
+                        <img src="https://humanoo.id/f/images/yama/laravel.svg" class="no-border" alt="Laravel">
+                    </div>
+                    <div class="col-2 col" popover-top="Statamic">
+                        <img src="https://humanoo.id/f/images/yama/statamic.svg" class="no-border" alt="Statamic">
+                    </div>
+                    <div class="col-2 col" popover-top="Apache">
+                        <img src="https://humanoo.id/f/images/yama/apache.svg" class="no-border" alt="Apache">
+                    </div>
+                    <div class="col-2 col" popover-top="NodeJS">
+                        <img src="https://humanoo.id/f/images/yama/node-js.svg" class="no-border" alt="NodeJS">
+                    </div>
+                    <div class="col-2 col" popover-top="npm">
+                        <img src="https://humanoo.id/f/images/yama/npm.svg" class="no-border" alt="npm">
+                    </div>
+                    <div class="col-2 col" popover-top="MySQL">
+                        <img src="https://humanoo.id/f/images/yama/mysql.svg" class="no-border" alt="MySQL">
+                    </div>
+                    <div class="col-2 col" popover-top="mongoDB">
+                        <img src="https://humanoo.id/f/images/yama/mongodb.svg" class="no-border" alt="mongoDB">
+                    </div>
+                    <div class="col-2 col" popover-top="Postman">
+                        <img src="https://humanoo.id/f/images/yama/postman.svg" class="no-border" alt="Postman">
+                    </div>
+                    <div class="col-2 col" popover-top="Ubuntu">
+                        <img src="https://humanoo.id/f/images/yama/ubuntu.svg" class="no-border" alt="Ubuntu">
+                    </div>
+                    <div class="col-2 col" popover-top="Debian">
+                        <img src="https://humanoo.id/f/images/yama/debian.svg" class="no-border" alt="Debian">
+                    </div>
+                    <div class="col-2 col" popover-top="Linux">
+                        <img src="https://humanoo.id/f/images/yama/linux.svg" class="no-border" alt="Linux">
+                    </div>
+                    <div class="col-2 col" popover-top="Git">
+                        <img src="https://humanoo.id/f/images/yama/git.svg" class="no-border" alt="Git">
+                    </div>
+                    <div class="col-2 col" popover-top="Github">
+                        <img src="https://humanoo.id/f/images/yama/github.svg" class="no-border" alt="Github">
+                    </div>
+                    <div class="col-2 col" popover-top="Linode">
+                        <img src="https://humanoo.id/f/images/yama/linode.svg" class="no-border" alt="Linode">
+                    </div>
+                    <div class="col-2 col" popover-top="VSCode">
+                        <img src="https://humanoo.id/f/images/yama/visual-studio-code.svg" class="no-border"
+                            alt="VSCode">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"></script>
 </body>
 
 </html>
